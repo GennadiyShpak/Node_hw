@@ -36,7 +36,7 @@ function removeContact(contactId) {
       );
       fs.writeFile(contactsPath, removingContact, err => {
         if (err) throw err;
-        console.log('The file has been saved!');
+        console.log('The file has been removed!');
       });
     } catch (err) {
       console.log(err);
